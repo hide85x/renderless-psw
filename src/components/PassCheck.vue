@@ -7,12 +7,12 @@
       v-slot="{ complex, match }"
     >
       <div class="complexBar" :class="complexStyle(complex)"></div>
-      <input type="password" v-model="input.psw" />
+      <input role="password" type="password" v-model="input.psw" />
       password
-      <input type="password" v-model="input.confirmPsw" />
+      <input role="confirmPassword" type="password" v-model="input.confirmPsw" />
       confirm password
       <div class="complexBar" :class="complexStyle(complex)"></div>
-      <button :disabled="match ? disabled : ''">send</button>
+      <button :disabled="match ? disabled : ''">Submit</button>
     </RenderlessPsw>
   </div>
 </template>
