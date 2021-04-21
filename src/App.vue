@@ -1,20 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <PassCheck/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PassCheck from './components/PassCheck.vue';
+
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    PassCheck
+  },
+  setup() {
+
+  },
+};
 </script>
 
 <style>
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,5 +30,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  margin: auto;
 }
+
 </style>
