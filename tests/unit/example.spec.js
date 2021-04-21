@@ -1,12 +1,13 @@
 import { shallowMount } from '@vue/test-utils'
-import HelloWorld from '@/components/HelloWorld.vue'
+import PassCheck from '@/components/PassCheck.vue'
+import {checkMatch, checkComplex} from '@/components/renderless-psw'
+describe('PassCheck.vue', () => {
+  it('checkMatch should return fale, when paswords donest match', () => {
+    expect(checkMatch('a','b')).toBe(false)
+    
+  })
+  it('checkMatch should return true when psws matches', ()=> {
+    expect(checkMatch('a','a')).toBe(true)
 
-describe('HelloWorld.vue', () => {
-  it('renders props.msg when passed', () => {
-    const msg = 'new message'
-    const wrapper = shallowMount(HelloWorld, {
-      props: { msg }
-    })
-    expect(wrapper.text()).toMatch(msg)
   })
 })

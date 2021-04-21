@@ -70,7 +70,7 @@ body {
   width: 0%;
   height: 10px;
   margin-top: 20px;
-  transition: all 0.3s ease;
+  transition:    0.3s ease;
 }
 .low {
   height: 10px;
